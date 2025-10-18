@@ -1,0 +1,117 @@
+.container{
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'capa-mustang capa-mustang'
+        'veiculos veiculos'
+        'conteudo-ofertas conteudo-ofertas'
+        'conteudo-pos-venda conteudo-pos-venda'
+        'conteudo-eletricos conteudo-eletricos'
+        'conteudo-experiencias conteudo-assinatura'
+    ;
+}
+
+section#capa-mustang{
+    grid-area: capa-mustang;
+    border: 1px solid red;
+}
+
+section#veiculos{
+    grid-area: veiculos;
+    border: 1px solid red;
+    
+}
+
+section#veiculos > img{
+    max-width: 100%;
+}
+
+section#conteudo-ofertas{
+    grid-area: conteudo-ofertas;
+    border: 1px solid red;
+}
+
+section#conteudo-pos-venda{
+    grid-area: conteudo-pos-venda;
+    border: 1px solid red;
+}
+
+section#conteudo-eletricos{
+    grid-area: conteudo-eletricos;
+    border: 1px solid red;
+}
+
+section#conteudo-experiencias{
+    grid-area: conteudo-experiencias;
+    border: 1px solid red;
+}
+
+section#conteudo-assinatura{
+    grid-area: conteudo-assinatura;
+    border: 1px solid red;
+}
+
+
+header{
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav{
+    flex-grow: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+ul a:link,
+ul a:visited{
+    color: #00095b;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul a:hover{
+    color: #061fff;
+}
+
+.botao{
+    background: #00095b;
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 30px;
+}
+
+.botao:hover{
+    background-color: #061fff;
+}
+
+.botao-destaque{
+    font-size: 1.2rem;
+    background: white;
+    color: #00095b;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.botao-destaque:hover{
+    background-color: #f4f4f4;
+}
+
+
+
+/* Tipografia */
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
