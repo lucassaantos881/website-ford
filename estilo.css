@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body{
+    font-family: "Orbitron", sans-serif;
+    font-style: italic;
+}
+
+
 .container{
     max-width: 1200px;
-    padding: 10px;
+    padding: 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,17 +20,32 @@
         'conteudo-pos-venda conteudo-pos-venda'
         'conteudo-eletricos conteudo-eletricos'
         'conteudo-experiencias conteudo-assinatura'
+        'rodape rodape'
     ;
 }
 
+
+
 section#capa-mustang{
     grid-area: capa-mustang;
-    border: 1px solid red;
+    background: linear-gradient(to bottom, #001127, transparent), url(img/ford-mustang-gt.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 20px;
+    min-height: 850px;
+    box-sizing: border-box;
+    margin-bottom: 30px;  
 }
 
 section#veiculos{
     grid-area: veiculos;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -32,27 +55,82 @@ section#veiculos > img{
 
 section#conteudo-ofertas{
     grid-area: conteudo-ofertas;
-    border: 1px solid red;
+    background: linear-gradient(to right, #001127, transparent), url(img/ford-ranger.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 section#conteudo-pos-venda{
     grid-area: conteudo-pos-venda;
-    border: 1px solid red;
+    background: linear-gradient(to right, #001127, transparent), url(img/pos-venda.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 section#conteudo-eletricos{
     grid-area: conteudo-eletricos;
-    border: 1px solid red;
+    background: linear-gradient(to right, #001127, transparent), url(img/ford-mustang-mach.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 section#conteudo-experiencias{
     grid-area: conteudo-experiencias;
-    border: 1px solid red;
+    background: linear-gradient(to right, #001127, transparent), url(img/ford-experience.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 350px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
 }
 
 section#conteudo-assinatura{
     grid-area: conteudo-assinatura;
-    border: 1px solid red;
+    background: linear-gradient(to right, #001127, transparent), url(img/ford-bronco-raptor.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 350px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+footer{
+    grid-area: rodape;
+    background-color: #00095b;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 
@@ -74,6 +152,7 @@ nav ul{
 
 ul a:link,
 ul a:visited{
+    font-size: 0.9rem;
     color: #00095b;
     text-decoration: none;
     padding: 10px;
@@ -100,18 +179,29 @@ ul a:hover{
     background: white;
     color: #00095b;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 30px;
 }
 
 .botao-destaque:hover{
-    background-color: #f4f4f4;
+    background-color: #d6d6d6;
 }
 
 
 
 /* Tipografia */
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h1{
+    color: white;
+    font-size: 2rem;
+}
+
+h1.escolha{
+    color: #00095b;
+    font-size: 2rem;
+}
+
+p{
+    color: white;
+    font-size: 0.9rem;
 }
