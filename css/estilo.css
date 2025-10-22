@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body{
+    font-family: "Orbitron", sans-serif;
+    font-style: italic;
+}
+
+
+.container{
+    max-width: 1550px;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'capa-mustang capa-mustang'
+        'veiculos veiculos'
+        'conteudo-ofertas conteudo-ofertas'
+        'conteudo-pos-venda conteudo-pos-venda'
+        'conteudo-eletricos conteudo-eletricos'
+        'conteudo-experiencias conteudo-assinatura'
+        'rodape rodape'
+    ;
+}
+
+section#capa-mustang{
+    grid-area: capa-mustang;
+    background: linear-gradient(to bottom, #001127, transparent), url(../img/ford-mustang-gt.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 20px;
+    min-height: 850px;
+    box-sizing: border-box;
+    margin-top: 30px; 
+}
+
+section#veiculos{
+    grid-area: veiculos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section#veiculos > img{
+    max-width: 100%;
+}
+
+section#conteudo-ofertas{
+    grid-area: conteudo-ofertas;
+    background: linear-gradient(to right, #001127, transparent), url(../img/ford-ranger.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+section#conteudo-pos-venda{
+    grid-area: conteudo-pos-venda;
+    background: linear-gradient(to right, #001127, transparent), url(../img/pos-venda.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+section#conteudo-eletricos{
+    grid-area: conteudo-eletricos;
+    background: linear-gradient(to right, #001127, transparent), url(../img/ford-mustang-mach.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+section#conteudo-experiencias{
+    grid-area: conteudo-experiencias;
+    background: linear-gradient(to right, #001127, transparent), url(../img/ford-experience.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 350px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+
+section#conteudo-assinatura{
+    grid-area: conteudo-assinatura;
+    background: linear-gradient(to right, #001127, transparent), url(../img/ford-bronco-raptor.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 50px;
+    min-height: 350px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+footer{
+    grid-area: rodape;
+    background-color: #00095b;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+header{
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav{
+    flex-grow: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+/*LINKS E BOTÕES*/
+ul a:link,
+ul a:visited{
+    font-size: 0.9rem;
+    color: #00095b;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul a:hover{
+    color: #061fff;
+}
+
+ul a#vehicle-page{
+    color: #061fff;
+}
+
+.botao{
+    background: #00095b;
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 30px;
+}
+
+.botao:hover{
+    background-color: #061fff;
+}
+
+.botao-destaque{
+    font-size: 1.2rem;
+    background: white;
+    color: #00095b;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.botao-destaque:hover{
+    background-color: #d6d6d6;
+}
+
+
+/* Tipografia */
+
+h1{
+    color: white;
+    font-size: 2rem;
+}
+
+h1.escolha{
+    color: #00095b;
+    font-size: 2rem;
+}
+
+h2{
+    color: #00095b;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+p{
+    color: white;
+    font-size: 0.9rem;
+}
+
+p.cars{
+    color: #00095b;
+    font-size: 1rem;
+    text-align: center;
+}
+
+h1.title-vehicle{
+    font-size: 2.5rem;
+}
+
+p.subtitle-vehicle{
+    font-size: 1rem;
+    text-align: center;
+}
+
+span{
+    color: #00095b;
+}
