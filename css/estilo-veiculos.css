@@ -6,12 +6,7 @@
     padding: 20px;
     margin: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        'veiculos veiculos veiculos veiculos'
-
-        'rodape rodape rodape rodape'
-    ;
+    grid-template-columns: repeat(4 ,1fr);
 }
 
 section#capa-veiculos{
@@ -28,18 +23,17 @@ section#capa-veiculos{
     margin-top: 30px;  
 }
 
-section#vehicle{
-    grid-area: veiculos;
+section#categories{
+    grid-area: conteudo;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding-top: 25px;
-
+    padding-left: 25px;
 }
 
-section#box-cars{
-    border-bottom: 1px solid lightgray;
+section.box-cars{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -49,8 +43,7 @@ section#box-cars{
     margin-bottom: 100px;
 }
 
-section#box-cars > img{
-    background-color: lightgray;
+section.box-cars > img{
     max-width: 250px;
     padding: 40px;
 }
